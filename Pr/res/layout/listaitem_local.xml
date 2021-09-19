@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cftv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/store_card_shape" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <ar.com.promm.customwidgets.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/local_name"
+                android:id="@+id/ttName"
+                android:textSize="20sp"
+                android:textColor="@color/greenPromm"
+                android:paddingBottom="5dp"/>
+
+            <ar.com.promm.customwidgets.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/local_address"
+                android:id="@+id/ttAddr"
+                android:textColor="@color/infoPromm"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center|right">
+
+            <ar.com.promm.customwidgets.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                cftv:typeFace="Simple-Line-Icons"
+                android:text="@string/go_next_icon"
+                android:textColor="@color/greenPromm"
+                android:textSize="25sp"
+                android:paddingBottom="1dp"
+                android:paddingRight="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

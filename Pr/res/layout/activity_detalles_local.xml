@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cftv="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/store_profile_background" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <ar.com.promm.customwidgets.CustomFontTextView
+            android:id="@+id/likesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="7dp"
+            android:text="@string/likes"
+            android:textSize="22dp"
+            android:textColor="@color/white" />
+
+        <ar.com.promm.customwidgets.CustomFontTextView
+            android:id="@+id/smileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/smile_icon"
+            android:textSize="30dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:textColor="@color/white"
+            cftv:typeFace="Simple-Line-Icons" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" >
+
+        <ar.com.promm.customwidgets.CustomFontTextView
+            android:id="@+id/goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_back_icon"
+            android:textSize="30dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:textColor="@color/greenPromm"
+            cftv:typeFace="Simple-Line-Icons" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp" >
+
+        <ar.com.promm.customwidgets.CustomFontTextView
+            android:id="@+id/infoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_icon"
+            android:textSize="30dp"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:textColor="@color/white"
+            cftv:typeFace="Simple-Line-Icons" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical" >
+
+        <ar.com.promm.customwidgets.AutofitTextView
+            android:id="@+id/ttName1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:text="@string/local_name"
+            android:singleLine="true"
+            autofit:minTextSize="8sp"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            cftv:typeFace="Pacifico" />
+
+        <com.joooonho.SelectableRoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:sriv_left_top_corner_radius="14dip"
+            app:sriv_right_top_corner_radius="14dip"
+            app:sriv_left_bottom_corner_radius="14dip"
+            app:sriv_right_bottom_corner_radius="14dip"
+            app:sriv_border_width="0dip"
+            app:sriv_border_color="@android:color/transparent"
+            app:sriv_oval="false"
+            android:id="@+id/avatarIV"
+            style="@style/storeProfileImage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp" >
+
+            <ar.com.promm.customwidgets.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="7dp"
+                android:text="@string/pin_icon"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                cftv:typeFace="Simple-Line-Icons" />
+
+            <ar.com.promm.customwidgets.AutofitTextView
+                android:id="@+id/ttAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/local_address"
+                android:textSize="22dp"
+                android:singleLine="true"
+                autofit:minTextSize="8sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp" >
+
+            <ar.com.promm.customwidgets.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="7dp"
+                android:text="@string/telephone_icon"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                cftv:typeFace="Simple-Line-Icons" />
+
+            <ar.com.promm.customwidgets.CustomFontTextView
+                android:id="@+id/btnDialTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/contact_us"
+                android:textSize="22dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ar.com.promm.customwidgets.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="7dp"
+                android:text="@string/photo_album_icon"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                cftv:typeFace="Simple-Line-Icons" />
+
+            <ar.com.promm.customwidgets.CustomFontTextView
+                android:id="@+id/btnPhotoGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/album"
+                android:textSize="22dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

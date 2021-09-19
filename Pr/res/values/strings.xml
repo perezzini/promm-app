@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Promm</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_first_tutorial">Tutorial</string>
+    <string name="title_activity_tabs">Tabs</string>
+    <string name="title_activity_detalles_promm">Promm details</string>
+    <string name="title_activity_detalles_local">Store details</string>
+    <string name="title_activity_store_description">Store description</string>
+    <string name="title_activity_temporary_location">Temporary location</string>
+    <string name="title_activity_register_store">Register store</string>
+    <string name="title_activity_app_info">App info</string>
+    <string name="title_activity_gallery">Stores photo album</string>
+    <string name="title_activity_stores">Stores</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tab_name">Tab name</string>
+    <string name="tab_arrow">Little arrow</string>
+    <string name="local_name">Nombre del local</string>
+    <string name="local_address">Dirección del local</string>
+    <string name="description">Descripción</string>
+    <string name="descripcion_av_local">Avatar del local</string>
+    <string name="show_map_desc">Ver en el mapa</string>
+    <string name="share_description">Compartir</string>
+    <string name="horario">Horario</string>
+    <string name="images_button">Imágenes</string>
+    <string name="local_phone">Teléfono del local</string>
+	<string name="gallery">Galería</string>
+	<string name="descripcion_like">Like</string>
+	<string name="clock_description">Reloj de horarios</string>
+	<string name="todoeldia">Todo el día</string>
+    <string name="go_next_icon"></string>
+    <string name="go_back_icon"></string>
+    <string name="smile_icon"></string>
+    <string name="info_icon"></string>
+    <string name="pin_icon"></string>
+    <string name="notebook_icon"></string>
+    <string name="telephone_icon"></string>
+    <string name="photo_album_icon"></string>
+    <string name="globe_icon"></string>
+    <string name="share_icon"></string>
+    <string name="clock_icon"></string>
+    <string name="question_mark_icon"></string>
+    <string name="contact_us">Contáctanos</string>
+    <string name="album">Álbum</string>
+    <string name="likes">Likes</string>
+    <string name="first_tutorial_intro">¡Encuentra y comparte las últimas novedades acerca de los locales gastronómicos a tu alrededor!</string>
+    <string name="next">Siguiente</string>
+    <string name="app_info_title">"Los locales gastronómicos necesitaban un hogar. \n Distinto.</string>
+    <string name="app_info_content_1">Desde el comienzo, quisimos hacer de Promm una plataforma confiable y visualmente atractiva en la cual locales gastronómicos puedan expresarse y conectarse con potenciales consumidores. Al instante.</string>
+    <string name="app_info_content_2">¡Ayúdanos a cumplir nuestros objetivos! Para más información, visita prommapp.com</string>
+    <string name="temporary_location_title">Actualmente, sólo disponible en</string>
+    <string name="temporary_location_location">Rosario, Santa Fe</string>
+    <string name="temporary_location_btn">Comenzar</string>
+    <string name="register_store">Registrar local</string>
+    <string name="share_app">Compartir App</string>
+    <string name="register_store_title">¿Eres el administrador de un local?</string>
+    <string name="register_store_content">Súmate a Promm e interactúa con amantes de la gastronomía. Totalmente gratis.</string>
+    
+</resources>

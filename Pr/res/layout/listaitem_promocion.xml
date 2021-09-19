@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cftv="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/promm_card_shape"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/avatarIV"
+            style="@style/localAvatar"
+            android:contentDescription="@string/descripcion_av_local" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="right"
+                android:paddingLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ar.com.promm.customwidgets.AutofitTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:gravity="right"
+                    android:text="@string/local_name"
+                    android:singleLine="true"
+                    autofit:minTextSize="17dp"
+                    android:maxLines="1"
+                    android:textSize="18dp"
+                    android:textColor="@color/greenPromm"
+                    android:id="@+id/ttName" />
+
+                <ar.com.promm.customwidgets.CustomFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/local_address"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/infoPromm"
+                    android:textSize="13dp"
+                    android:id="@+id/ttAddr" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ar.com.promm.customwidgets.CustomFontTextView
+        android:id="@+id/ttDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:gravity="left"
+        android:text="@string/description"
+        android:textSize="17sp"
+        android:paddingTop="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ttDesc"
+        android:gravity="bottom"
+        android:paddingLeft="0dp"
+        android:paddingTop="5dp" >
+
+        <ar.com.promm.customwidgets.CustomFontTextView
+            android:id="@+id/inMapIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/show_map_desc"
+            android:textSize="25dp"
+            android:textColor="@color/lightBluePromm"
+            android:text="@string/pin_icon"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            cftv:typeFace="Simple-Line-Icons" />
+
+        <ar.com.promm.customwidgets.CustomFontTextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/share_description"
+            android:textSize="25dp"
+            android:textColor="@color/lightBluePromm"
+            android:text="@string/share_icon"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            cftv:typeFace="Simple-Line-Icons" />
+
+        <ar.com.promm.customwidgets.CustomFontTextView
+            android:id="@+id/scheduleIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:contentDescription="horario"
+            android:textColor="@color/infoPromm"
+            android:textSize="25dp"
+            android:text="@string/clock_icon"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            cftv:typeFace="Simple-Line-Icons" />
+
+        <ar.com.promm.customwidgets.CustomFontTextView
+            android:id="@+id/ttSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/horario"
+            android:textSize="15dp"
+            android:textColor="@color/infoPromm"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+</RelativeLayout>

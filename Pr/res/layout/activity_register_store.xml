@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:cftv="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/intro_background"
+    tools:context=".RegisterStoreActivity"
+    android:gravity="center">
+
+    <ar.com.promm.customwidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notebook_icon"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:padding="2dp"
+        android:layout_weight="1"
+        cftv:typeFace="Simple-Line-Icons" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <ar.com.promm.customwidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_store_title"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:padding="2dp"
+            android:gravity="center"/>
+
+        <ar.com.promm.customwidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_store_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:padding="2dp"
+            android:gravity="center"/>
+
+        <Button
+            style="@android:style/TextAppearance.WindowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/register_store"
+            android:onClick="registerStore" />
+    </LinearLayout>
+
+    <ar.com.promm.customwidgets.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comenzar"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        cftv:typeFace="Pacifico"
+        android:clickable="true"
+        android:onClick="toNextActivity"
+        android:layout_gravity="bottom|center"/>
+
+</LinearLayout>

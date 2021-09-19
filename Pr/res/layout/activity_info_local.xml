@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cftv="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/store_profile_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ar.com.promm.customwidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_back_icon"
+            android:textColor="@color/greenPromm"
+            android:textSize="30dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/goBack"
+            cftv:typeFace="Simple-Line-Icons"/>
+
+        <ar.com.promm.customwidgets.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/info_icon"
+            android:textSize="45dp"
+            android:textColor="@color/white"
+            android:paddingBottom="10dp"
+            android:id="@+id/textView2"
+            cftv:typeFace="Simple-Line-Icons"/>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView" >
+
+            <ar.com.promm.customwidgets.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Información sobre el local"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:id="@+id/ttDesc" />
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<resources xmlns:ptr="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
+        <!--
+            NoTitleBar.Fullscreen<item name="android:background">@color/white</item>
+        
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+    </style>
+
+    <style name="ImageTitle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">#99000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="ButtonContainer">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:background">#99000000</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="listStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">5dp</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="ptrShowIndicator">false</item>
+        <item name="ptrAnimationStyle">rotate</item>
+        <item name="ptrHeaderTextColor">@color/infoPromm</item>
+        <!-- item name="ptrDrawable">@drawable/circle</item-->
+        <item name="ptrPullLabel">Tira para actualizar</item>
+        <item name="ptrRefreshLabel">Actualizando...</item>
+        <item name="ptrReleaseLabel">Suelta para actualizar</item>
+    </style>
+
+    <style name="localAvatar">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:src">@drawable/null_background</item>
+    </style>
+
+    <style name="storeProfileImage">
+        <item name="android:layout_width">175dp</item>
+        <item name="android:layout_height">175dp</item>
+        <item name="android:src">@drawable/null_background</item>
+    </style>
+
+</resources>

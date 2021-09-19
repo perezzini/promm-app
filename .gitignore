@@ -1,0 +1,15 @@
+*.swp
+.gradle
+**/build
+**/lint.xml
+**/gen
+**/bin
+**/.project
+**/.settings
+**/.classpath
+local.properties
+Pr.apk
+tags
+
+.idea
+*.iml
